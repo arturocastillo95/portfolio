@@ -118,8 +118,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #0a3953
- !important;
+			color: #0a3953 !important;
 			text-decoration: none;
 		}
 
@@ -2599,7 +2598,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #1b262c;
-		background-attachment: fixed;
+		/* background-attachment: fixed; */
 		background-image: linear-gradient(0deg, rgba(27,38,44,0.9) 0%, rgba(3,49,74,0.8) 100%), url("../../images/bg_1.jpeg");
 		background-position: top left;
 		background-repeat: no-repeat;
@@ -3062,7 +3061,7 @@ input, select, textarea {
 			#header {
 				background-attachment: scroll;
 				background-position: top left, center center;
-				background-size: auto,		cover;
+				background-size: cover,		cover;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
