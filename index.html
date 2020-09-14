@@ -1,15 +1,11 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Arturo Castillo | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.min.css" />
 		<link rel="stylesheet" href="assets/css/cards.css" />
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 	</head>
@@ -62,7 +58,7 @@
 							<div class="card">
 								<div class="card-image">
 									<img src="/images/mockup_hero_1.jpg" alt="">
-									<a href="https://www.youtube.com/watch?v=JT4UCyY6hDc" class="play-button" data-lity>
+									<a href="" class="play-button" data-lity>
 										<span class="fas fa-play-circle fa-3x"></span>
 									</a>
 								</div>
@@ -71,7 +67,7 @@
 										Localito Web App
 									</h3>
 									<span>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim sapiente, perferendis, consectetur quae vitae modi esse beatae.
+										Localito helps small business take their catalog of products online in a few minutes, so they can receive orders from customers through WhatsApp.
 									</span>
 									<br>
 									<br>
@@ -79,7 +75,7 @@
 								</div>
 								<div class="card-bottom">
 									<div class="button-box">
-										<a href="" class="card-button">
+										<a href="https://github.com/arturocastillo95/Localito" class="card-button" target="_blank" >
 											<span class="icon fas fa-code"></span>
 											&nbsp;&nbsp;&nbsp;View Code
 										</a>
@@ -93,7 +89,7 @@
 							<div class="card">
 
 								<div class="card-image">
-									<img src="/images/mockup_hero_1.jpg" alt="">
+									<img src="/images/video_editing.jpg" alt="">
 									<a href="https://youtube.com" class="play-button" data-lity>
 										<span class="fas fa-play-circle fa-3x"></span>
 									</a>
@@ -104,7 +100,7 @@
 										Python Video Editing Bot
 									</h3>
 									<span>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim sapiente, perferendis, consectetur quae vitae modi esse beatae.
+										This command line tool helps you create a completly new video using a selection of videos that you provide. It can also add an intro and music.
 									</span>
 									<br>
 									<br>
@@ -113,7 +109,7 @@
 
 								<div class="card-bottom">
 									<div class="button-box">
-										<a href="" class="card-button">
+										<a href="https://github.com/arturocastillo95/Python-video-editing-tool" class="card-button" target="_blank">
 											<span class="icon fas fa-code"></span>
 											&nbsp;&nbsp;&nbsp;View Code
 										</a>
@@ -126,7 +122,7 @@
 							<!-- Start portfolio card -->
 							<div class="card">
 								<div class="card-image">
-									<img src="/images/mockup_hero_1.jpg" alt="">
+									<img src="/images/bot.jpg" alt="">
 									<a href="https://youtube.com" class="play-button">
 										<span class="fas fa-play-circle fa-3x"></span>
 									</a>
@@ -136,7 +132,7 @@
 										Course completion certificate Bot
 									</h3>
 									<span>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim sapiente, perferendis, consectetur quae vitae modi esse beatae.
+										In my previous job I had to create docens of course completion certificates by hand, so I decided to make a command line tool that takes a csv file, creates all the certificates and then sends them through email.
 									</span>
 									<br>
 									<br>
@@ -145,7 +141,7 @@
 
 								<div class="card-bottom">
 									<div class="button-box">
-										<a href="" class="card-button">
+										<a href="https://github.com/arturocastillo95/CONSTANCIAS_BOT" class="card-button" target="_blank">
 											<span class="icon fas fa-code"></span>
 											&nbsp;&nbsp;&nbsp;View Code
 										</a>
@@ -158,17 +154,17 @@
 							<!-- Start portfolio card -->
 							<div class="card">
 								<div class="card-image">
-									<img src="/images/mockup_hero_1.jpg" alt="">
+									<img src="/images/elearning.jpg" alt="">
 									<a href="https://youtube.com" class="play-button">
 										<span class="fas fa-play-circle fa-3x"></span>
 									</a>
 								</div>
 								<div class="card-text">
 									<h3 class="card-title">
-										Localito Web App
+										Online education platform
 									</h3>
 									<span>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim sapiente, perferendis, consectetur quae vitae modi esse beatae.
+										I designed and implemented a fully fledged course platform. You can purchase courses, recieve your credentials and take all the lessons.
 									</span>
 									<br>
 									<br>
@@ -176,17 +172,15 @@
 								</div>
 								<div class="card-bottom">
 									<div class="button-box">
-										<a href="" class="card-button">
-											<span class="icon fas fa-code"></span>
-											&nbsp;&nbsp;&nbsp;View Code
+										<a href="https://elfiscalista.com" class="card-button" target="_blank">
+											<span class="icon fas fa-eye"></span>
+											&nbsp;&nbsp;&nbsp;View Live
 										</a>
 										<div class="shine"></div>
 									</div>
 								</div>
 							</div>
 							<!-- End portfolio card -->
-
-
 						</div>
 
 					</section>
@@ -205,7 +199,7 @@
 									</div>
 								</form>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input id="send-email" type="submit" value="Send Message" /></li>
 								</ul>
 							</div>
 							<div class="col-4 col-12-small">
@@ -255,5 +249,20 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				$(document).ready(function() {
+
+					$('#send-email').click(function(e) {
+						let name = $('#name').val()
+						let message = $('message').val()
+						let subject = '?subject=' + "Hey Arturo! I'm " + name
+
+						let body = '&body=' + message
+
+						window.open('mailto:arturguay@gmail.com' + subject + body)
+					})
+				})
+			</script>
 	</body>
+
 </html>
